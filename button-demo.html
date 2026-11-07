@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TRIZINII — проверка кнопки преподавателя</title>
+<link rel="stylesheet" href="teacher-button.css">
+<style>body{font:17px Arial,sans-serif;color:#24242b;background:#f6f5fa;margin:0;padding:48px 28px}main{max-width:760px;margin:auto}h1{font-size:28px}.stage{padding:60px 30px;background:white;margin:28px 0}p{line-height:1.6}output{display:block;margin-top:60px;word-break:break-word}</style>
+</head><body><main><h1>TRIZINII</h1><h2>Кнопка из задания преподавателя</h2>
+<p>Исходные правила .button, :hover и :active подключены без изменений. Нажатие проверяет локальный обработчик; товар в корзину не добавляется.</p>
+<div class="stage"><button type="button" class="button" id="teacherButton">Тест</button>
+<output id="result" aria-live="polite">Нажатий 0</output></div>
+<p>Обычное состояние: масштаб 1,4. Наведение: 1,45. Нажатие: 1,38. CSS задаёт оформление; учёт действий выполняет JavaScript.</p>
+<script>let clicks=0;document.getElementById('teacherButton').addEventListener('click',()=>{document.getElementById('result').textContent='Нажатий '+(++clicks);});</script>
+</main></body></html>
